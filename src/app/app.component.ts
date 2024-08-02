@@ -202,6 +202,11 @@ export class AppComponent implements AfterViewInit {
   }
 
   decreaseIconSize() {
+    this.iconService.testing().subscribe(
+      res=>{
+        console.log(res);
+      }
+    );
     if (this.iconSize > 10) {
       this.iconSize -= 5;
     }
