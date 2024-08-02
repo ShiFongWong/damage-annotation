@@ -15,11 +15,15 @@
     <span class="legend-item"><img height="24" width="24" src="/assets/icons/small-scratch-icon.svg" alt="">Small Scratch</span>
     <span class="legend-item"><img height="24" width="24" src="/assets/icons/big-scratch-icon.svg" alt="">Big Scratch</span>
     <span class="legend-item"><img height="24" width="24" src="/assets/icons/accident-icon.svg" alt="">Accident</span>
+    <span class="legend-item"><img height="24" width="24" src="/assets/icons/bigdent.svg" alt="">Bigdent</span>
+    <span class="legend-item"><img height="24" width="24" src="/assets/icons/smalldent.svg" alt="">Smalldent</span>
   </div>
   <div class="toolbar">
     <button (click)="selectIcon('assets/icons/small-scratch-icon.svg')">Small Scratch</button>
     <button (click)="selectIcon('assets/icons/big-scratch-icon.svg')">Big Scratch</button>
     <button (click)="selectIcon('assets/icons/accident-icon.svg')">Accident</button>
+    <button (click)="selectIcon('assets/icons/bigdent.svg')">Bigdent</button>
+    <button (click)="selectIcon('assets/icons/smalldent.svg')">Smalldent</button>
     <button (click)="increaseIconSize()">Increase Size</button>
     <button (click)="decreaseIconSize()">Decrease Size</button>
     <input type="number" [value]="iconSize" (change)="setIconSize($event)" min="10" step="1" style="width: 60px;">
